@@ -1,0 +1,13 @@
+@startuml
+
+interface ImplementationService{
+    delete(id:Integer)
+}
+class ImplementationServiceImpl{
+    delete(id:Integer)
+}
+
+ImplementationService <|.. ImplementationServiceImpl
+
+
+@enduml

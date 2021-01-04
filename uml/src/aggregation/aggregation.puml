@@ -1,0 +1,12 @@
+@startuml
+class Mouse
+class Keyboard
+class Computer{
+    keyboard:Keyboard
+    mouse:Mouse
+    setKeyboard(keyboard:Keyboard):void
+    setMouse(mouse:Mouse):void
+}
+Computer o-- Mouse
+Computer o-- Keyboard
+@enduml

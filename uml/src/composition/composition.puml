@@ -1,0 +1,13 @@
+@startuml
+
+class Face
+class IdentityCard
+class Person{
+    Face:Face
+    IdentityCard:IdentityCard
+    getFace():Face
+    setIdentityCard(identityCard:IdentityCard):void
+}
+Person o-- IdentityCard
+Person *-- Face
+@enduml

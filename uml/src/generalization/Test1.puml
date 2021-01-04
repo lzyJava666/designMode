@@ -1,0 +1,11 @@
+@startuml
+class Test1{
+    save():void
+    delete():void
+}
+
+class Test1Bean
+
+Test1 <|-- Test1Bean
+
+@enduml

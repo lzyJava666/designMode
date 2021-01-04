@@ -1,0 +1,10 @@
+@startuml
+class UmlMain {
+-int id
+-String name
++getName():String
++setName(String name)
+}
+
+
+@enduml

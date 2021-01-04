@@ -1,0 +1,18 @@
+@startuml
+
+class AssociationTest1{
+    associationTest2:AssociationTest2
+}
+class AssociationTest2{
+}
+class AssociationTest3{
+    associationTest4:AssociationTest4
+}
+class AssociationTest4{
+    associationTest3:AssociationTest3
+}
+
+AssociationTest1 --> AssociationTest2
+AssociationTest3 -- AssociationTest4
+
+@enduml
