@@ -1,0 +1,25 @@
+@startuml
+class Clothes{
+    name:String
+    setName(name:String):void
+    type():void
+    select():void
+    take():void
+    buy():void
+}
+class ManClothes
+class GirlClothes
+Clothes <|-- ManClothes
+Clothes <|-- GirlClothes
+
+class ClothesFactory{
+    CLOTHES_FACTORY:ClothesFactory
+    getInstance():ClothesFactory
+    createClothes(typeName:String):Clothes
+}
+ClothesFactory..>Clothes
+class OrderClothes{
+    systemIn():String
+}
+ClothesFactory o-- OrderClothes
+@enduml

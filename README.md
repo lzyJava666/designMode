@@ -15,3 +15,5 @@
 > #### DoubleCheck : 双重检查单例模式
 > #### StaticClassSingleton :通过静态内部类实现单例模式
 > #### EnumSingleton :通过枚举实现单例模式
+## factory ：工厂模式实例集
+> #### simplenessfactory :简单工厂模式实例
