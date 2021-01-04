@@ -7,3 +7,11 @@
 > #### dependency：依赖实例
 > #### generalization：泛化实例
 > #### implementation： 实现实例
+## singleton : 单例模式实例集
+> #### HungrySingleton1 : 饿汉式单例模式（静态常量）实例
+> #### HungrySingleton2 :饿汉式单例模式（静态代码块）实例
+> #### LazySingleton1 :懒汉式单例模式（线程不安全）
+> #### LazySingleton2 :懒汉式单例模式（线程安全）
+> #### DoubleCheck : 双重检查单例模式
+> #### StaticClassSingleton :通过静态内部类实现单例模式
+> #### EnumSingleton :通过枚举实现单例模式
