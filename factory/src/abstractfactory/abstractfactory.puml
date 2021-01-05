@@ -1,0 +1,32 @@
+@startuml
+class Clothes{
+    name:String
+    setName(name:String):void
+    type():void
+    select():void
+    take():void
+    buy():void
+}
+class BJManClothes
+class BJGirlClothes
+class SHManClothes
+class SHGirlClothes
+Clothes <|-- BJManClothes
+Clothes <|-- BJGirlClothes
+Clothes <|-- SHManClothes
+Clothes <|-- SHGirlClothes
+interface abstractClothes{
+    createClothes(type:String):Clothes
+}
+class BJFactory
+class SHFactory
+abstractClothes <|.. BJFactory
+abstractClothes <|.. SHFactory
+BJFactory ..> BJManClothes
+BJFactory ..>BJGirlClothes
+SHFactory ..> SHGirlClothes
+SHFactory ..> SHManClothes
+
+OrderClothes o-- abstractClothes
+
+@enduml

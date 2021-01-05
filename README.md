@@ -17,3 +17,5 @@
 > #### EnumSingleton :通过枚举实现单例模式
 ## factory ：工厂模式实例集
 > #### simplenessfactory :简单工厂模式实例
+> #### factorymethod : 工厂方法模式实例
+> #### abstractfactory : 抽象工厂模式实例
