@@ -19,3 +19,5 @@
 > #### simplenessfactory :简单工厂模式实例
 > #### factorymethod : 工厂方法模式实例
 > #### abstractfactory : 抽象工厂模式实例
+## prototype ： 原型模式实例集
+> #### simplenessprototype:简单原型模式实例
