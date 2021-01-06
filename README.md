@@ -22,3 +22,5 @@
 ## prototype ： 原型模式实例集
 > #### simplenessprototype:浅拷贝原型模式实例
 > #### deepcopy :深拷贝原型模式实例
+## builder ：建造者模式实例集
+> #### builder:建造者模式实例

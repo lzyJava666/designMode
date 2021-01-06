@@ -1,0 +1,28 @@
+@startuml
+class House{
+    color:String
+    heigh:float
+}
+interface HouseBuilder{
+    house:House=new House()
+    piling():void
+    walls():void
+    capping():void
+    build():House
+}
+HouseBuilder *-- House
+class CommonHouse
+class Villa
+HouseBuilder <|.. CommonHouse
+HouseBuilder <|.. Villa
+class HouseDirector{
+    houseBuilder:HouseBuilder
+    createHouse():House
+}
+HouseDirector o-- HouseBuilder
+class client
+client ..> HouseDirector
+client ..> CommonHouse
+client ..> Villa
+
+@enduml
