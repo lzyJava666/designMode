@@ -20,4 +20,5 @@
 > #### factorymethod : 工厂方法模式实例
 > #### abstractfactory : 抽象工厂模式实例
 ## prototype ： 原型模式实例集
-> #### simplenessprototype:简单原型模式实例
+> #### simplenessprototype:浅拷贝原型模式实例
+> #### deepcopy :深拷贝原型模式实例

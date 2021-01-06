@@ -1,4 +1,7 @@
 package simplenessprototype;
+
+import java.math.BigDecimal;
+
 public class SheepClient {
     public static void main(String[] args) {
         Sheep sheep = new Sheep("tom", 1, "白色");
@@ -11,5 +14,12 @@ public class SheepClient {
         System.out.println("sheep2:"+sheep2.hashCode()+" "+sheep2);
         System.out.println("sheep3:"+sheep3.hashCode()+" "+sheep3);
         System.out.println("sheep4:"+sheep4.hashCode()+" "+sheep4);
+
+        double a=0.1;
+        System.out.println(Double.toString(a));
+        System.out.println(new BigDecimal(a));
+        System.out.println(new BigDecimal(Double.toString(a)));
+        System.out.println(new BigDecimal(Double.toString(a)).toString());
+        System.out.println(new BigDecimal(Double.toString(a)).doubleValue());
     }
 }
