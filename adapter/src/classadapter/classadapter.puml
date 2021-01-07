@@ -1,0 +1,19 @@
+@startuml
+class Power{
+    output220V():int
+}
+interface ITransverter{
+    output5V():int
+}
+class ChargingHead
+Power <|-- ChargingHead
+ITransverter <|.. ChargingHead
+
+class Phone{
+    charge():void
+}
+Phone ..> ITransverter
+class Client
+Client ..> Phone
+Client ..> ChargingHead
+@enduml
