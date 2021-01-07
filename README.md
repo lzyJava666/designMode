@@ -26,3 +26,5 @@
 > #### builder:建造者模式实例
 ## adapter：适配器模式实例集
 > #### classadapter：类适配器实例
+> #### objectadapter:对象适配器实例
+> #### interfaceadapter:接口适配器实例

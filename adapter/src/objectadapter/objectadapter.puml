@@ -5,8 +5,11 @@ class Power{
 interface ITransverter{
     output5V():int
 }
-class ChargingHead
-Power <|-- ChargingHead
+class ChargingHead{
+    power:Power
+    ChargingHead(power:Power)
+}
+ChargingHead o-- Power
 ITransverter <|.. ChargingHead
 
 class Phone{
@@ -16,4 +19,5 @@ Phone ..> ITransverter
 class Client
 Client ..> Phone
 Client ..> ChargingHead
+Client ..>Power
 @enduml
