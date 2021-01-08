@@ -1,0 +1,55 @@
+@startuml
+
+interface IBrand{
+    start():void
+    close():void
+    call():void
+}
+class Vivo{
+    start():void
+    close():void
+    call():void
+}
+class Oppo{
+    start():void
+    close():void
+    call():void
+}
+class Huawei{
+    start():void
+    close():void
+    call():void
+}
+IBrand <|.. Vivo
+IBrand <|.. Oppo
+IBrand <|.. Huawei
+
+class AbsPhone{
+    iBrand:IBrand
+    start():void
+    close():void
+    call():void
+    AbsPhone(iBrand:IBrand)
+}
+AbsPhone o-- IBrand
+class FoldPhone{
+    FoldPhone(iBrand:IBrand)
+    start():void
+    close():void
+    call():void
+}
+
+class AlmostPhone{
+    AlmostPhone(iBrand:IBrand)
+    start():void
+    close():void
+    call():void
+}
+AbsPhone <|-- FoldPhone
+AbsPhone <|-- AlmostPhone
+
+class Client
+Client ..> IBrand
+Client ..> AbsPhone
+
+@enduml

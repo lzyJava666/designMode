@@ -28,3 +28,5 @@
 > #### classadapter：类适配器实例
 > #### objectadapter:对象适配器实例
 > #### interfaceadapter:接口适配器实例
+## bridge ：桥接模式实例集
+> #### bridge：桥接模式实例
