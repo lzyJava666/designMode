@@ -1,0 +1,29 @@
+@startuml
+
+abstract class Drinks{
+    price:float
+    name:String
+    cost():float
+    setPrice(price:float):void
+    getPrice():float
+    setName(name:String):void
+    getName():String
+}
+class Coffee
+Drinks <|-- Coffee
+class Cafe
+Coffee <|-- Cafe
+class Caramel
+Coffee <|-- Caramel
+class Decorator{
+    drinks:Drinks
+    cost():float
+    Decorator(drinks:Drinks)
+}
+Drinks <|-- Decorator
+Decorator *-- Drinks
+Class Chocolate
+Decorator <|-- Chocolate
+class Milk
+Decorator <|-- Milk
+@enduml

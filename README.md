@@ -30,3 +30,5 @@
 > #### interfaceadapter:接口适配器实例
 ## bridge ：桥接模式实例集
 > #### bridge：桥接模式实例
+## decorator ：装饰者模式实例集
+> #### decorator: 装饰者模式实例
