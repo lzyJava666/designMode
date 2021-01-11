@@ -1,5 +1,7 @@
 package composite;
 
+import java.util.Map;
+
 /**
  * 组织
  */
@@ -9,11 +11,11 @@ public abstract class Organization {
 
     //默认实现
     protected void add(Organization organization){
-
+        throw new UnsupportedOperationException();
     }
 
     protected void remove(String name){
-
+        throw new UnsupportedOperationException();
     }
 
     protected abstract void print();
