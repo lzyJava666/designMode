@@ -32,3 +32,5 @@
 > #### bridge：桥接模式实例
 ## decorator ：装饰者模式实例集
 > #### decorator: 装饰者模式实例
+## composite：组合模式实例集
+> #### composite:组合模式实例

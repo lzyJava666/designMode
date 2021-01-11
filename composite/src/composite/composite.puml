@@ -1,0 +1,41 @@
+@startuml
+
+class Organization{
+    name:String
+    des:String
+    setName(name:String):void
+    getName():String
+    setDes(des:String):void
+    getDes():String
+    Organization(name:String,des:String)
+    add(organization:Organization):void
+    remove(name:String):void
+    print():void
+}
+
+class Academy{
+    organizations:List<Organization>
+    Academy(name:String,des:String)
+    add(organization:Organization):void
+    remove(name:String):void
+    print():void
+}
+Organization <|-- Academy
+class Department{
+    organizations:List<Organization>
+    Department(name:String,des:String)
+    add(organization:Organization):void
+    remove(name:String):void
+    print():void
+}
+Organization <|-- Department
+Academy o-- Department
+class Profession{
+    Profession(name:String,des:String)
+    print():void
+}
+Organization <|-- Profession
+Department o-- Profession
+class Client
+Client ..> Organization
+@enduml
