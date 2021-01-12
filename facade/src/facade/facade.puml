@@ -1,0 +1,57 @@
+@startuml
+
+class CornPopper{
+    on():void
+    make():void
+    calefaction():void
+    off():void
+}
+class Screen{
+    on():void
+    off():void
+    down():void
+    up():void
+}
+class Projector{
+    on():void
+    off():void
+}
+class Audio{
+    on():void
+    off():void
+    increase():void
+    decrease():void
+    mute():void
+}
+class Dvd{
+    on():void
+    off():void
+    down():void
+    up():void
+    anew():void
+    pause():void
+}
+class Lamp{
+    on():void
+    off():void
+    dark():void
+    bright():void
+}
+class Jxpra{
+    open():void
+    setout():void
+    off():void
+}
+
+Jxpra o-- CornPopper
+Jxpra o-- Screen
+Jxpra o-- Projector
+Jxpra o-- Audio
+Jxpra o-- Dvd
+Jxpra o-- Lamp
+
+class Client
+Client --> Jxpra
+
+
+@enduml

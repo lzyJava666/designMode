@@ -34,3 +34,5 @@
 > #### decorator: 装饰者模式实例
 ## composite：组合模式实例集
 > #### composite:组合模式实例
+## facade ：外观模式实例集
+> #### facade:外观模式实例
