@@ -36,3 +36,5 @@
 > #### composite:组合模式实例
 ## facade ：外观模式实例集
 > #### facade:外观模式实例
+## flyweight：享元模式实例集
+> #### flyweight：享元模式实例
