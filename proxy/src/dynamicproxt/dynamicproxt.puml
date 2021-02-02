@@ -1,0 +1,26 @@
+@startuml
+
+class Student{
+    - String name
+    + Student(String name)
+    + String getName()
+}
+
+interface IStudent{
+    + String getName
+}
+
+IStudent <|.. Student
+
+class ProxyFactory{
+    - Object object
+    +ProxyFactory(Object object)
+    {static} + Object getProxyInstance()
+}
+note bottom: 1.根据传入的对象（object）确定目标对象\n2 .利用反射机制，返回一个代理对象\n3.利用代理对象调用目标对象方法
+
+class client
+client --> ProxyFactory
+client --> Student
+
+@enduml

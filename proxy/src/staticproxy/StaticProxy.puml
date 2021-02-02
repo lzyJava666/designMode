@@ -1,0 +1,27 @@
+    @startuml
+
+    class Student{
+        - String name
+        + void setName(String name)
+        + String getName()
+    }
+
+    interface IStudent{
+        +String getName()
+    }
+
+    class StudentProxy{
+        -IStudent studnet
+        +StudentProxy(IStudent studnet)
+        + String getName()
+    }
+
+    StudentProxy o-- Student
+    IStudent <|.. Student
+    IStudent <|.. StudentProxy
+    class Client
+    Client -->StudentProxy
+    Client -->Student
+
+
+    @enduml

@@ -1,0 +1,23 @@
+@startuml
+
+class Student{
+    - String name
+    + Student()
+    + Student(String name)
+    + String getName()
+}
+
+
+Interface MethodInterceptor
+note left:此包需引入cglib .jar包
+class ProxyFactory{
+    -Object object
+    +Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy)
+    +ProxyFactory(Object object)
+    + Object getProxyInstance()
+}
+MethodInterceptor <-- ProxyFactory
+class Client
+Client ..> ProxyFactory
+Client ..>Student
+@enduml
