@@ -1,0 +1,33 @@
+@startuml
+
+abstract class SoybeanMilk{
+    +void template()
+    -void select()
+    #{abstract}void add()
+    -void soak()
+    -void smash()
+    + boolean isAdd()
+}
+
+class Peanut{
+    +void add()
+}
+
+class BrownSugar{
+    +void add()
+}
+
+class Pure{
+    + boolean isAdd()
+}
+
+SoybeanMilk <|-- Pure
+SoybeanMilk <|-- Peanut
+SoybeanMilk <|-- BrownSugar
+
+class Client
+Client ..>Peanut
+Client ..>BrownSugar
+Client ..>Pure
+
+@enduml
