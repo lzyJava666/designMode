@@ -1,0 +1,47 @@
+@startuml
+
+interface Command{
+    void execute()
+    void undo()
+}
+note top:规定命令类必须有的具体操作 执行/撤销
+
+class Lamp{
+    void on()
+    void off()
+}
+note left:电灯类，具体执行者
+class Tv{
+    void on()
+    void off()
+}
+note left:电视类，具体执行者
+class LampOnCommand
+class LampOffCommand
+class TvOnCommand
+class TvOffCommand
+class NoCommand
+note left:空命令，用于省去空判断操作
+Command <|.. LampOnCommand
+Command <|.. LampOffCommand
+Command <|.. NoCommand
+Command <|.. TvOnCommand
+Command <|.. TvOffCommand
+LampOnCommand o-- Lamp
+LampOffCommand o-- Lamp
+TvOffCommand o-- Tv
+TvOnCommand o-- Tv
+class Jxpra{
+    -Command[] onCommands
+    -Command[] offCommands
+    -Command undoCommand
+    +Jxpra()
+    + void setCommand(int index,Command onCommand,Command offCommand)
+    + void onButton(int index)
+    + void offButton(int index)
+    + void undo()
+}
+Jxpra o-- Command
+class Client
+Client ..> Jxpra
+@enduml

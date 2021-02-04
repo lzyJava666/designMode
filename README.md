@@ -38,7 +38,9 @@
 > #### facade:外观模式实例
 ## flyweight：享元模式实例集
 > #### flyweight：享元模式实例
-## proxy:代理模式
+## proxy:代理模式实例集
 > #### staticproxy:静态代理模式
 > #### dynamicproxt:动态代理模式
 > #### cglib ：cglib模式
+## command:命令模式实例集
+> #### command:命令模式实例
